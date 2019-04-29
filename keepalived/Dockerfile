@@ -6,3 +6,5 @@ COPY run.sh /run.sh
 COPY keepalived.conf /etc/keepalived/keepalived.conf
 
 ENTRYPOINT [ "/run.sh" ]
+
+RUN ["chmod","+x","/run.sh"]
